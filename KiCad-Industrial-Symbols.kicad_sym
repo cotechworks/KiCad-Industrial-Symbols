@@ -1,6 +1,6 @@
 (kicad_symbol_lib
 	(version 20251024)
-	(generator "kicad_symbol_editor")
+	(generator kilibedit)
 	(generator_version "10.0")
 	(symbol "3Phase_Induction_Motor"
 		(pin_numbers
@@ -2191,6 +2191,7 @@
 		(embedded_fonts no)
 	)
 	(symbol "GT2510-WXTBD"
+		(property "消費電力" "16" (at 0 0 0) (hide yes) (effects (font (size 1.27 1.27))))
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
@@ -3986,6 +3987,7 @@
 		(embedded_fonts no)
 	)
 	(symbol "KH15_24V_2Line"
+		(property "消費電力" "1" (at 0 0 0) (hide yes) (effects (font (size 1.27 1.27))))
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
@@ -4126,6 +4128,7 @@
 		(embedded_fonts no)
 	)
 	(symbol "LG-9200"
+		(property "消費電力" "0.72" (at 0 0 0) (hide yes) (effects (font (size 1.27 1.27))))
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
@@ -4320,6 +4323,7 @@
 		(embedded_fonts no)
 	)
 	(symbol "MX-7105"
+		(property "消費電力" "0" (at 0 0 0) (hide yes) (effects (font (size 1.27 1.27))))
 		(pin_names
 			(hide yes)
 		)
