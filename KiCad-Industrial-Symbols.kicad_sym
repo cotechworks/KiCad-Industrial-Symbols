@@ -1,6 +1,6 @@
 (kicad_symbol_lib
 	(version 20251024)
-	(generator kilibedit)
+	(generator "kicad_symbol_editor")
 	(generator_version "10.0")
 	(symbol "3Phase_Induction_Motor"
 		(pin_numbers
@@ -226,6 +226,162 @@
 					)
 				)
 				(number "3"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+		)
+		(embedded_fonts no)
+	)
+	(symbol "AC"
+		(power global)
+		(pin_numbers
+			(hide yes)
+		)
+		(pin_names
+			(offset 0)
+			(hide yes)
+		)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(duplicate_pin_numbers_are_jumpers no)
+		(property "Reference" "#PWR"
+			(at 5.08 2.54 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "AC"
+			(at 5.08 5.08 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 0 0 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 0 0 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "交流供給源"
+			(at 0 -8.89 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "ki_keywords" "global power"
+			(at 0 0 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(symbol "AC_0_1"
+			(arc
+				(start -1.27 3.175)
+				(mid -0.635 3.8073)
+				(end 0 3.175)
+				(stroke
+					(width 0.254)
+					(type default)
+				)
+				(fill
+					(type none)
+				)
+			)
+			(circle
+				(center 0 3.175)
+				(radius 1.905)
+				(stroke
+					(width 0.254)
+					(type default)
+				)
+				(fill
+					(type none)
+				)
+			)
+			(arc
+				(start 1.27 3.175)
+				(mid 0.635 2.5427)
+				(end 0 3.175)
+				(stroke
+					(width 0.254)
+					(type default)
+				)
+				(fill
+					(type none)
+				)
+			)
+		)
+		(symbol "AC_1_1"
+			(pin power_in line
+				(at 0 6.35 270)
+				(length 1.27)
+				(name ""
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "1"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin power_in line
+				(at 0 0 90)
+				(length 1.27)
+				(name ""
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "1"
 					(effects
 						(font
 							(size 1.27 1.27)
@@ -690,7 +846,7 @@
 						)
 					)
 				)
-				(number "1"
+				(number "1K"
 					(effects
 						(font
 							(size 1.27 1.27)
@@ -708,25 +864,7 @@
 						)
 					)
 				)
-				(number "2"
-					(effects
-						(font
-							(size 1.27 1.27)
-						)
-					)
-				)
-			)
-			(pin passive line
-				(at 10.16 -5.08 180)
-				(length 7.62)
-				(name "SA"
-					(effects
-						(font
-							(size 1.27 1.27)
-						)
-					)
-				)
-				(number "3"
+				(number "1L"
 					(effects
 						(font
 							(size 1.27 1.27)
@@ -744,7 +882,25 @@
 						)
 					)
 				)
-				(number "4"
+				(number "2K"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin passive line
+				(at 10.16 -5.08 180)
+				(length 7.62)
+				(name "SA"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "2L"
 					(effects
 						(font
 							(size 1.27 1.27)
@@ -2191,7 +2347,6 @@
 		(embedded_fonts no)
 	)
 	(symbol "GT2510-WXTBD"
-		(property "消費電力" "16" (at 0 0 0) (hide yes) (effects (font (size 1.27 1.27))))
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
@@ -2243,6 +2398,17 @@
 			(at 13.97 -21.59 0)
 			(show_name no)
 			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "消費電力" "16"
+			(at 0 0 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(hide yes)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3151,7 +3317,7 @@
 		(in_pos_files yes)
 		(duplicate_pin_numbers_are_jumpers no)
 		(property "Reference" "VAL"
-			(at 6.35 6.35 0)
+			(at 10.16 6.35 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -3161,7 +3327,7 @@
 			)
 		)
 		(property "Value" "HTS"
-			(at 6.35 3.81 0)
+			(at 10.16 3.81 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -3182,7 +3348,7 @@
 			)
 		)
 		(property "Datasheet" "https://aa-industrial.azbil.com/files/default/2025-12/SS1-8114-0300-22.pdf"
-			(at 6.35 -17.78 0)
+			(at 10.16 -13.97 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(hide yes)
@@ -3193,10 +3359,9 @@
 			)
 		)
 		(property "Description" "電気式トップガイド形単座調節弁"
-			(at 6.35 -20.32 0)
+			(at 10.16 -16.51 0)
 			(show_name no)
 			(do_not_autoplace no)
-			(hide yes)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3218,7 +3383,7 @@
 			(pin unspecified line
 				(at 0 0 0)
 				(length 2.54)
-				(name "IN+"
+				(name "AC"
 					(effects
 						(font
 							(size 1.27 1.27)
@@ -3236,24 +3401,6 @@
 			(pin unspecified line
 				(at 0 -2.54 0)
 				(length 2.54)
-				(name "IN-"
-					(effects
-						(font
-							(size 1.27 1.27)
-						)
-					)
-				)
-				(number ""
-					(effects
-						(font
-							(size 1.27 1.27)
-						)
-					)
-				)
-			)
-			(pin unspecified line
-				(at 0 -5.08 0)
-				(length 2.54)
 				(name "AC"
 					(effects
 						(font
@@ -3270,9 +3417,9 @@
 				)
 			)
 			(pin unspecified line
-				(at 0 -7.62 0)
+				(at 0 -6.35 0)
 				(length 2.54)
-				(name "AC"
+				(name "IN+"
 					(effects
 						(font
 							(size 1.27 1.27)
@@ -3288,7 +3435,7 @@
 				)
 			)
 			(pin unspecified line
-				(at 0 -10.16 0)
+				(at 0 -8.89 0)
 				(length 2.54)
 				(name "OUT+"
 					(effects
@@ -3306,7 +3453,25 @@
 				)
 			)
 			(pin unspecified line
-				(at 0 -12.7 0)
+				(at 20.32 -6.35 180)
+				(length 2.54)
+				(name "IN-"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number ""
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin unspecified line
+				(at 20.32 -8.89 180)
 				(length 2.54)
 				(name "OUT-"
 					(effects
@@ -3327,7 +3492,7 @@
 		(symbol "HTS_1_1"
 			(rectangle
 				(start 2.54 2.54)
-				(end 10.16 -15.24)
+				(end 17.78 -11.43)
 				(stroke
 					(width 0)
 					(type solid)
@@ -3987,7 +4152,6 @@
 		(embedded_fonts no)
 	)
 	(symbol "KH15_24V_2Line"
-		(property "消費電力" "1" (at 0 0 0) (hide yes) (effects (font (size 1.27 1.27))))
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
@@ -4025,7 +4189,7 @@
 			)
 		)
 		(property "Datasheet" "https://products.naganokeiki.co.jp/products/177.html"
-			(at 6.35 -12.7 0)
+			(at 6.35 -8.89 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(hide yes)
@@ -4036,9 +4200,20 @@
 			)
 		)
 		(property "Description" "圧力トランスミッタ 24V DC2線式"
-			(at 6.35 -10.16 0)
+			(at 6.35 -6.35 0)
 			(show_name no)
 			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "消費電力" "1"
+			(at 0 0 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(hide yes)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4076,9 +4251,9 @@
 				)
 			)
 			(pin passive line
-				(at 0 -2.54 0)
+				(at 12.7 0 180)
 				(length 2.54)
-				(name "CH+"
+				(name "-"
 					(effects
 						(font
 							(size 1.27 1.27)
@@ -4094,9 +4269,9 @@
 				)
 			)
 			(pin passive line
-				(at 0 -5.08 0)
+				(at 12.7 -2.54 180)
 				(length 2.54)
-				(name "-"
+				(name "CH+"
 					(effects
 						(font
 							(size 1.27 1.27)
@@ -4115,7 +4290,7 @@
 		(symbol "KH15_24V_2Line_1_1"
 			(rectangle
 				(start 2.54 1.27)
-				(end 10.16 -6.35)
+				(end 10.16 -3.81)
 				(stroke
 					(width 0)
 					(type solid)
@@ -4128,7 +4303,6 @@
 		(embedded_fonts no)
 	)
 	(symbol "LG-9200"
-		(property "消費電力" "0.72" (at 0 0 0) (hide yes) (effects (font (size 1.27 1.27))))
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
@@ -4180,6 +4354,17 @@
 			(at 7.62 -17.78 0)
 			(show_name no)
 			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "消費電力" "0.72"
+			(at 0 0 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(hide yes)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4322,8 +4507,598 @@
 		)
 		(embedded_fonts no)
 	)
+	(symbol "ME110GR-4AP"
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(duplicate_pin_numbers_are_jumpers no)
+		(property "Reference" "PM"
+			(at 11.43 7.62 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "ME110GR-4AP"
+			(at 11.43 5.08 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 0 0 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" "https://www.mitsubishielectric.co.jp/fa/products/faspec/detail.page?kisyu=/pmd&formNm=ME110GR_ME110GR-4AP_3326&category=ex&id=spec"
+			(at 7.62 -53.34 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "電子式マルチ指示計器"
+			(at 7.62 -50.8 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "ki_keywords" "power monitor"
+			(at 0 0 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(symbol "ME110GR-4AP_0_0"
+			(pin unspecified line
+				(at 0 0 0)
+				(length 2.54)
+				(name "+C1"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number ""
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin unspecified line
+				(at 0 -2.54 0)
+				(length 2.54)
+				(name "C1"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number ""
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin unspecified line
+				(at 0 -6.35 0)
+				(length 2.54)
+				(name "+C3"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number ""
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin unspecified line
+				(at 0 -8.89 0)
+				(length 2.54)
+				(name "C3"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number ""
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin unspecified line
+				(at 0 -12.7 0)
+				(length 2.54)
+				(name "P1"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number ""
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin unspecified line
+				(at 0 -15.24 0)
+				(length 2.54)
+				(name "P2"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number ""
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin unspecified line
+				(at 0 -17.78 0)
+				(length 2.54)
+				(name "P3"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number ""
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin unspecified line
+				(at 0 -21.59 0)
+				(length 2.54)
+				(name "SA"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number ""
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin unspecified line
+				(at 0 -24.13 0)
+				(length 2.54)
+				(name "ZA"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number ""
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin unspecified line
+				(at 0 -27.94 0)
+				(length 2.54)
+				(name "MA"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number ""
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin unspecified line
+				(at 0 -30.48 0)
+				(length 2.54)
+				(name "MB"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number ""
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin unspecified line
+				(at 0 -38.1 0)
+				(length 2.54)
+				(name "FG"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number ""
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin unspecified line
+				(at 19.05 0 180)
+				(length 2.54)
+				(name "CH1+"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number ""
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin unspecified line
+				(at 19.05 -2.54 180)
+				(length 2.54)
+				(name "CH1-"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number ""
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin unspecified line
+				(at 19.05 -6.35 180)
+				(length 2.54)
+				(name "CH2+"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number ""
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin unspecified line
+				(at 19.05 -8.89 180)
+				(length 2.54)
+				(name "CH2-"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number ""
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin unspecified line
+				(at 19.05 -12.7 180)
+				(length 2.54)
+				(name "CH3+"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number ""
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin unspecified line
+				(at 19.05 -15.24 180)
+				(length 2.54)
+				(name "CH3-"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number ""
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin unspecified line
+				(at 19.05 -19.05 180)
+				(length 2.54)
+				(name "CH4+"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number ""
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin unspecified line
+				(at 19.05 -21.59 180)
+				(length 2.54)
+				(name "CH4-"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number ""
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin no_connect line
+				(at 19.05 -25.4 180)
+				(length 2.54)
+				(name "NC"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number ""
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin no_connect line
+				(at 19.05 -27.94 180)
+				(length 2.54)
+				(name "NC"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number ""
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin no_connect line
+				(at 19.05 -30.48 180)
+				(length 2.54)
+				(name "NC"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number ""
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin no_connect line
+				(at 19.05 -33.02 180)
+				(length 2.54)
+				(name "NC"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number ""
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin unspecified line
+				(at 19.05 -36.83 180)
+				(length 2.54)
+				(name "CA"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number ""
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin unspecified line
+				(at 19.05 -39.37 180)
+				(length 2.54)
+				(name "CB"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number ""
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin no_connect line
+				(at 19.05 -43.18 180)
+				(length 2.54)
+				(name "NC"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number ""
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin no_connect line
+				(at 19.05 -45.72 180)
+				(length 2.54)
+				(name "NC"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number ""
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+		)
+		(symbol "ME110GR-4AP_1_1"
+			(rectangle
+				(start 2.54 2.54)
+				(end 16.51 -48.26)
+				(stroke
+					(width 0)
+					(type solid)
+				)
+				(fill
+					(type background)
+				)
+			)
+		)
+		(embedded_fonts no)
+	)
 	(symbol "MX-7105"
-		(property "消費電力" "0" (at 0 0 0) (hide yes) (effects (font (size 1.27 1.27))))
 		(pin_names
 			(hide yes)
 		)
@@ -4378,6 +5153,17 @@
 			(at 6.35 -17.78 0)
 			(show_name no)
 			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "消費電力" "0"
+			(at 0 0 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(hide yes)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5052,25 +5838,7 @@
 				)
 			)
 			(pin unspecified line
-				(at 0 -5.08 0)
-				(length 2.54)
-				(name "I-"
-					(effects
-						(font
-							(size 1.27 1.27)
-						)
-					)
-				)
-				(number ""
-					(effects
-						(font
-							(size 1.27 1.27)
-						)
-					)
-				)
-			)
-			(pin unspecified line
-				(at 0 -7.62 0)
+				(at 0 -6.35 0)
 				(length 2.54)
 				(name "I+"
 					(effects
@@ -5088,7 +5856,7 @@
 				)
 			)
 			(pin unspecified line
-				(at 0 -10.16 0)
+				(at 0 -8.89 0)
 				(length 2.54)
 				(name "+"
 					(effects
@@ -5106,7 +5874,25 @@
 				)
 			)
 			(pin unspecified line
-				(at 0 -12.7 0)
+				(at 12.7 -6.35 180)
+				(length 2.54)
+				(name "I-"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number ""
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin unspecified line
+				(at 12.7 -8.89 180)
 				(length 2.54)
 				(name "-"
 					(effects
@@ -5127,7 +5913,7 @@
 		(symbol "PAXTV105 II P -032_1_1"
 			(rectangle
 				(start 2.54 2.54)
-				(end 10.16 -15.24)
+				(end 10.16 -11.43)
 				(stroke
 					(width 0)
 					(type solid)
@@ -5760,7 +6546,7 @@
 				)
 			)
 			(pin no_connect line
-				(at 26.67 -7.62 180)
+				(at 0 -30.48 0)
 				(length 5.08)
 				(name "NC"
 					(effects
@@ -5832,7 +6618,7 @@
 				)
 			)
 			(pin no_connect line
-				(at 26.67 -17.78 180)
+				(at 0 -33.02 0)
 				(length 5.08)
 				(name "NC"
 					(effects
@@ -5904,7 +6690,7 @@
 				)
 			)
 			(pin no_connect line
-				(at 26.67 -27.94 180)
+				(at 0 -35.56 0)
 				(length 5.08)
 				(name "NC"
 					(effects
@@ -5976,7 +6762,7 @@
 				)
 			)
 			(pin passive line
-				(at 26.67 -38.1 180)
+				(at 0 -40.64 0)
 				(length 5.08)
 				(name "+24V"
 					(effects
@@ -6276,7 +7062,7 @@
 				)
 			)
 			(pin passive line
-				(at 26.67 0 180)
+				(at 0 -5.08 0)
 				(length 5.08)
 				(name "CH1_I+"
 					(effects
@@ -6294,7 +7080,7 @@
 				)
 			)
 			(pin passive line
-				(at 26.67 -2.54 180)
+				(at 26.67 -5.08 180)
 				(length 5.08)
 				(name "CH1_I-"
 					(effects
@@ -6312,7 +7098,7 @@
 				)
 			)
 			(pin passive line
-				(at 26.67 -5.08 180)
+				(at 0 -7.62 0)
 				(length 5.08)
 				(name "CH2_I+"
 					(effects
@@ -6348,7 +7134,7 @@
 				)
 			)
 			(pin passive line
-				(at 26.67 -10.16 180)
+				(at 0 -10.16 0)
 				(length 5.08)
 				(name "CH3_I+"
 					(effects
@@ -6366,7 +7152,7 @@
 				)
 			)
 			(pin passive line
-				(at 26.67 -12.7 180)
+				(at 26.67 -10.16 180)
 				(length 5.08)
 				(name "CH3_I-"
 					(effects
@@ -6384,7 +7170,7 @@
 				)
 			)
 			(pin passive line
-				(at 26.67 -15.24 180)
+				(at 0 -12.7 0)
 				(length 5.08)
 				(name "CH4_I+"
 					(effects
@@ -6402,7 +7188,7 @@
 				)
 			)
 			(pin passive line
-				(at 26.67 -17.78 180)
+				(at 26.67 -12.7 180)
 				(length 5.08)
 				(name "CH4_I-"
 					(effects
@@ -6420,7 +7206,7 @@
 				)
 			)
 			(pin passive line
-				(at 26.67 -20.32 180)
+				(at 0 -15.24 0)
 				(length 5.08)
 				(name "CH5_I+"
 					(effects
@@ -6438,7 +7224,7 @@
 				)
 			)
 			(pin passive line
-				(at 26.67 -22.86 180)
+				(at 26.67 -15.24 180)
 				(length 5.08)
 				(name "CH5_I-"
 					(effects
@@ -6456,7 +7242,7 @@
 				)
 			)
 			(pin passive line
-				(at 26.67 -25.4 180)
+				(at 0 -17.78 0)
 				(length 5.08)
 				(name "CH6_I+"
 					(effects
@@ -6474,7 +7260,7 @@
 				)
 			)
 			(pin passive line
-				(at 26.67 -27.94 180)
+				(at 26.67 -17.78 180)
 				(length 5.08)
 				(name "CH6_I-"
 					(effects
@@ -6492,7 +7278,7 @@
 				)
 			)
 			(pin passive line
-				(at 26.67 -30.48 180)
+				(at 0 -20.32 0)
 				(length 5.08)
 				(name "CH7_I+"
 					(effects
@@ -6510,7 +7296,7 @@
 				)
 			)
 			(pin passive line
-				(at 26.67 -33.02 180)
+				(at 26.67 -20.32 180)
 				(length 5.08)
 				(name "CH7_I-"
 					(effects
@@ -6528,7 +7314,7 @@
 				)
 			)
 			(pin passive line
-				(at 26.67 -35.56 180)
+				(at 0 -22.86 0)
 				(length 5.08)
 				(name "CH8_I+"
 					(effects
@@ -6546,7 +7332,7 @@
 				)
 			)
 			(pin passive line
-				(at 26.67 -38.1 180)
+				(at 26.67 -22.86 180)
 				(length 5.08)
 				(name "CH8_I-"
 					(effects
@@ -6564,7 +7350,7 @@
 				)
 			)
 			(pin passive line
-				(at 26.67 -40.64 180)
+				(at 26.67 -27.94 180)
 				(length 5.08)
 				(name "AGND"
 					(effects
@@ -6582,7 +7368,7 @@
 				)
 			)
 			(pin passive line
-				(at 26.67 -43.18 180)
+				(at 26.67 -30.48 180)
 				(length 5.08)
 				(name "FG"
 					(effects
@@ -6603,7 +7389,7 @@
 		(symbol "Q68ADI_1_1"
 			(rectangle
 				(start 5.08 2.54)
-				(end 21.59 -45.72)
+				(end 21.59 -33.02)
 				(stroke
 					(width 0)
 					(type solid)
@@ -6622,7 +7408,7 @@
 		(in_pos_files yes)
 		(duplicate_pin_numbers_are_jumpers no)
 		(property "Reference" "PLC"
-			(at 20.32 12.7 0)
+			(at 12.7 12.7 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -6632,7 +7418,7 @@
 			)
 		)
 		(property "Value" "Q68TD-G-H02"
-			(at 20.32 10.16 0)
+			(at 12.7 10.16 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -6653,7 +7439,7 @@
 			)
 		)
 		(property "Datasheet" "https://www.mitsubishielectric.co.jp/fa/products/faspec/point.page?kisyu=/plcq&formNm=Q68TD-G-H02&popup=1"
-			(at 26.67 -59.69 0)
+			(at 17.78 -58.42 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(hide yes)
@@ -6664,7 +7450,7 @@
 			)
 		)
 		(property "Description" "熱電対入力ユニット B、R、S、K、E、J、T、N"
-			(at 21.59 -54.61 0)
+			(at 12.7 -53.34 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -7064,7 +7850,7 @@
 				)
 			)
 			(pin passive line
-				(at 40.64 0 180)
+				(at 25.4 0 180)
 				(length 5.08)
 				(name "CH1-"
 					(effects
@@ -7082,7 +7868,7 @@
 				)
 			)
 			(pin no_connect line
-				(at 40.64 -2.54 180)
+				(at 25.4 -2.54 180)
 				(length 5.08)
 				(name "-"
 					(effects
@@ -7100,7 +7886,7 @@
 				)
 			)
 			(pin passive line
-				(at 40.64 -5.08 180)
+				(at 25.4 -5.08 180)
 				(length 5.08)
 				(name "CH2-"
 					(effects
@@ -7118,7 +7904,7 @@
 				)
 			)
 			(pin no_connect line
-				(at 40.64 -7.62 180)
+				(at 25.4 -7.62 180)
 				(length 5.08)
 				(name "-"
 					(effects
@@ -7136,7 +7922,7 @@
 				)
 			)
 			(pin passive line
-				(at 40.64 -10.16 180)
+				(at 25.4 -10.16 180)
 				(length 5.08)
 				(name "CH3-"
 					(effects
@@ -7154,7 +7940,7 @@
 				)
 			)
 			(pin no_connect line
-				(at 40.64 -12.7 180)
+				(at 25.4 -12.7 180)
 				(length 5.08)
 				(name "-"
 					(effects
@@ -7172,7 +7958,7 @@
 				)
 			)
 			(pin passive line
-				(at 40.64 -15.24 180)
+				(at 25.4 -15.24 180)
 				(length 5.08)
 				(name "CH4-"
 					(effects
@@ -7190,7 +7976,7 @@
 				)
 			)
 			(pin no_connect line
-				(at 40.64 -17.78 180)
+				(at 25.4 -17.78 180)
 				(length 5.08)
 				(name "-"
 					(effects
@@ -7208,7 +7994,7 @@
 				)
 			)
 			(pin passive line
-				(at 40.64 -20.32 180)
+				(at 25.4 -20.32 180)
 				(length 5.08)
 				(name "CH5-"
 					(effects
@@ -7226,7 +8012,7 @@
 				)
 			)
 			(pin no_connect line
-				(at 40.64 -22.86 180)
+				(at 25.4 -22.86 180)
 				(length 5.08)
 				(name "-"
 					(effects
@@ -7244,7 +8030,7 @@
 				)
 			)
 			(pin passive line
-				(at 40.64 -25.4 180)
+				(at 25.4 -25.4 180)
 				(length 5.08)
 				(name "CH6-"
 					(effects
@@ -7262,7 +8048,7 @@
 				)
 			)
 			(pin no_connect line
-				(at 40.64 -27.94 180)
+				(at 25.4 -27.94 180)
 				(length 5.08)
 				(name "-"
 					(effects
@@ -7280,7 +8066,7 @@
 				)
 			)
 			(pin passive line
-				(at 40.64 -30.48 180)
+				(at 25.4 -30.48 180)
 				(length 5.08)
 				(name "CH7-"
 					(effects
@@ -7298,7 +8084,7 @@
 				)
 			)
 			(pin no_connect line
-				(at 40.64 -33.02 180)
+				(at 25.4 -33.02 180)
 				(length 5.08)
 				(name "-"
 					(effects
@@ -7316,7 +8102,7 @@
 				)
 			)
 			(pin passive line
-				(at 40.64 -35.56 180)
+				(at 25.4 -35.56 180)
 				(length 5.08)
 				(name "CH8-"
 					(effects
@@ -7334,7 +8120,7 @@
 				)
 			)
 			(pin no_connect line
-				(at 40.64 -38.1 180)
+				(at 25.4 -38.1 180)
 				(length 5.08)
 				(name "-"
 					(effects
@@ -7352,7 +8138,7 @@
 				)
 			)
 			(pin no_connect line
-				(at 40.64 -40.64 180)
+				(at 25.4 -40.64 180)
 				(length 5.08)
 				(name "-"
 					(effects
@@ -7370,7 +8156,7 @@
 				)
 			)
 			(pin no_connect line
-				(at 40.64 -43.18 180)
+				(at 25.4 -43.18 180)
 				(length 5.08)
 				(name "-"
 					(effects
@@ -7388,7 +8174,7 @@
 				)
 			)
 			(pin passive line
-				(at 40.64 -45.72 180)
+				(at 25.4 -45.72 180)
 				(length 5.08)
 				(name "RTD+"
 					(effects
@@ -7406,7 +8192,7 @@
 				)
 			)
 			(pin passive line
-				(at 40.64 -48.26 180)
+				(at 25.4 -48.26 180)
 				(length 5.08)
 				(name "RTD-"
 					(effects
@@ -7427,7 +8213,7 @@
 		(symbol "Q68TD-G-H02_1_1"
 			(rectangle
 				(start 5.08 7.62)
-				(end 35.56 -50.8)
+				(end 20.32 -50.8)
 				(stroke
 					(width 0)
 					(type solid)
@@ -7477,7 +8263,7 @@
 			)
 		)
 		(property "Datasheet" "https://www.mitsubishielectric.co.jp/fa/products/faspec/point.page?kisyu=/plcq&formNm=QD62&popup=1"
-			(at 26.67 -59.69 0)
+			(at 20.32 -93.98 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(hide yes)
@@ -7488,7 +8274,7 @@
 			)
 		)
 		(property "Description" "高速カウンタユニット"
-			(at 21.59 -54.61 0)
+			(at 20.32 -91.44 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -7528,7 +8314,7 @@
 				)
 			)
 			(pin passive line
-				(at 40.64 -48.26 180)
+				(at 40.64 -86.36 180)
 				(length 5.08)
 				(name "0V"
 					(effects
@@ -7546,7 +8332,7 @@
 				)
 			)
 			(pin passive line
-				(at 40.64 -45.72 180)
+				(at 40.64 -83.82 180)
 				(length 5.08)
 				(name "0V"
 					(effects
@@ -7564,7 +8350,7 @@
 				)
 			)
 			(pin no_connect line
-				(at 40.64 -43.18 180)
+				(at 40.64 -73.66 180)
 				(length 5.08)
 				(name ""
 					(effects
@@ -7582,7 +8368,7 @@
 				)
 			)
 			(pin no_connect line
-				(at 40.64 -40.64 180)
+				(at 40.64 -71.12 180)
 				(length 5.08)
 				(name ""
 					(effects
@@ -7600,7 +8386,7 @@
 				)
 			)
 			(pin passive line
-				(at 40.64 -38.1 180)
+				(at 0 -77.47 0)
 				(length 5.08)
 				(name "CH2_EQU1"
 					(effects
@@ -7618,7 +8404,7 @@
 				)
 			)
 			(pin passive line
-				(at 40.64 -35.56 180)
+				(at 0 -72.39 0)
 				(length 5.08)
 				(name "CH1_EQU1"
 					(effects
@@ -7636,7 +8422,7 @@
 				)
 			)
 			(pin passive line
-				(at 40.64 -33.02 180)
+				(at 0 -64.77 0)
 				(length 5.08)
 				(name "CH2_FS_12V"
 					(effects
@@ -7654,7 +8440,7 @@
 				)
 			)
 			(pin passive line
-				(at 40.64 -30.48 180)
+				(at 40.64 -38.1 180)
 				(length 5.08)
 				(name "CTRLCOM"
 					(effects
@@ -7672,7 +8458,7 @@
 				)
 			)
 			(pin passive line
-				(at 40.64 -27.94 180)
+				(at 0 -46.99 0)
 				(length 5.08)
 				(name "CH2_PRE_12V"
 					(effects
@@ -7690,7 +8476,7 @@
 				)
 			)
 			(pin passive line
-				(at 40.64 -25.4 180)
+				(at 0 -31.75 0)
 				(length 5.08)
 				(name "CH2_B_5V"
 					(effects
@@ -7708,7 +8494,7 @@
 				)
 			)
 			(pin passive line
-				(at 40.64 -22.86 180)
+				(at 0 -26.67 0)
 				(length 5.08)
 				(name "CH2_B_24V"
 					(effects
@@ -7726,7 +8512,7 @@
 				)
 			)
 			(pin passive line
-				(at 40.64 -20.32 180)
+				(at 0 -13.97 0)
 				(length 5.08)
 				(name "CH2_A_5V"
 					(effects
@@ -7744,7 +8530,7 @@
 				)
 			)
 			(pin passive line
-				(at 40.64 -17.78 180)
+				(at 0 -8.89 0)
 				(length 5.08)
 				(name "CH2_A_24V"
 					(effects
@@ -7762,7 +8548,7 @@
 				)
 			)
 			(pin passive line
-				(at 40.64 -15.24 180)
+				(at 0 -55.88 0)
 				(length 5.08)
 				(name "CH1_FS_12V"
 					(effects
@@ -7780,7 +8566,7 @@
 				)
 			)
 			(pin passive line
-				(at 40.64 -12.7 180)
+				(at 40.64 -35.56 180)
 				(length 5.08)
 				(name "CTRLCOM"
 					(effects
@@ -7798,7 +8584,7 @@
 				)
 			)
 			(pin passive line
-				(at 40.64 -10.16 180)
+				(at 0 -38.1 0)
 				(length 5.08)
 				(name "CH1_PRE_12V"
 					(effects
@@ -7816,7 +8602,7 @@
 				)
 			)
 			(pin passive line
-				(at 40.64 -7.62 180)
+				(at 0 -22.86 0)
 				(length 5.08)
 				(name "CH1_B_5V"
 					(effects
@@ -7834,7 +8620,7 @@
 				)
 			)
 			(pin passive line
-				(at 40.64 -5.08 180)
+				(at 0 -17.78 0)
 				(length 5.08)
 				(name "CH1_B_24V"
 					(effects
@@ -7852,7 +8638,7 @@
 				)
 			)
 			(pin passive line
-				(at 40.64 -2.54 180)
+				(at 0 -5.08 0)
 				(length 5.08)
 				(name "CH1_A_5V"
 					(effects
@@ -7870,7 +8656,7 @@
 				)
 			)
 			(pin passive line
-				(at 40.64 0 180)
+				(at 0 0 0)
 				(length 5.08)
 				(name "CH1_A_24V"
 					(effects
@@ -7888,7 +8674,7 @@
 				)
 			)
 			(pin passive line
-				(at 0 -48.26 0)
+				(at 0 -86.36 0)
 				(length 5.08)
 				(name "12/24V"
 					(effects
@@ -7906,7 +8692,7 @@
 				)
 			)
 			(pin passive line
-				(at 0 -45.72 0)
+				(at 0 -83.82 0)
 				(length 5.08)
 				(name "12/24V"
 					(effects
@@ -7924,7 +8710,7 @@
 				)
 			)
 			(pin no_connect line
-				(at 0 -43.18 0)
+				(at 40.64 -78.74 180)
 				(length 5.08)
 				(name ""
 					(effects
@@ -7942,7 +8728,7 @@
 				)
 			)
 			(pin no_connect line
-				(at 0 -40.64 0)
+				(at 40.64 -76.2 180)
 				(length 5.08)
 				(name ""
 					(effects
@@ -7960,7 +8746,7 @@
 				)
 			)
 			(pin passive line
-				(at 0 -38.1 0)
+				(at 0 -80.01 0)
 				(length 5.08)
 				(name "CH2_EQU2"
 					(effects
@@ -7978,7 +8764,7 @@
 				)
 			)
 			(pin passive line
-				(at 0 -35.56 0)
+				(at 0 -74.93 0)
 				(length 5.08)
 				(name "CH1_EQU2"
 					(effects
@@ -7996,7 +8782,7 @@
 				)
 			)
 			(pin passive line
-				(at 0 -33.02 0)
+				(at 0 -67.31 0)
 				(length 5.08)
 				(name "CH2_FS_5V"
 					(effects
@@ -8014,7 +8800,7 @@
 				)
 			)
 			(pin passive line
-				(at 0 -30.48 0)
+				(at 0 -62.23 0)
 				(length 5.08)
 				(name "CH2_FS_24V"
 					(effects
@@ -8032,7 +8818,7 @@
 				)
 			)
 			(pin passive line
-				(at 0 -27.94 0)
+				(at 0 -49.53 0)
 				(length 5.08)
 				(name "CH2_PRE_5V"
 					(effects
@@ -8050,7 +8836,7 @@
 				)
 			)
 			(pin passive line
-				(at 0 -25.4 0)
+				(at 0 -44.45 0)
 				(length 5.08)
 				(name "CH2_PRE_24V"
 					(effects
@@ -8068,7 +8854,7 @@
 				)
 			)
 			(pin passive line
-				(at 0 -22.86 0)
+				(at 0 -29.21 0)
 				(length 5.08)
 				(name "CH2_B_12V"
 					(effects
@@ -8086,7 +8872,7 @@
 				)
 			)
 			(pin passive line
-				(at 0 -20.32 0)
+				(at 40.64 -2.54 180)
 				(length 5.08)
 				(name "ABCOM"
 					(effects
@@ -8104,7 +8890,7 @@
 				)
 			)
 			(pin passive line
-				(at 0 -17.78 0)
+				(at 0 -11.43 0)
 				(length 5.08)
 				(name "CH2_A_12V"
 					(effects
@@ -8122,7 +8908,7 @@
 				)
 			)
 			(pin passive line
-				(at 0 -15.24 0)
+				(at 0 -58.42 0)
 				(length 5.08)
 				(name "CH1_FS_5V"
 					(effects
@@ -8140,7 +8926,7 @@
 				)
 			)
 			(pin passive line
-				(at 0 -12.7 0)
+				(at 0 -53.34 0)
 				(length 5.08)
 				(name "CH1_FS_24V"
 					(effects
@@ -8158,7 +8944,7 @@
 				)
 			)
 			(pin passive line
-				(at 0 -10.16 0)
+				(at 0 -40.64 0)
 				(length 5.08)
 				(name "CH1_PRE_5V"
 					(effects
@@ -8176,7 +8962,7 @@
 				)
 			)
 			(pin passive line
-				(at 0 -7.62 0)
+				(at 0 -35.56 0)
 				(length 5.08)
 				(name "CH1_PRE_24V"
 					(effects
@@ -8194,7 +8980,7 @@
 				)
 			)
 			(pin passive line
-				(at 0 -5.08 0)
+				(at 0 -20.32 0)
 				(length 5.08)
 				(name "CH1_B_12V"
 					(effects
@@ -8212,7 +8998,7 @@
 				)
 			)
 			(pin passive line
-				(at 0 -2.54 0)
+				(at 40.64 0 180)
 				(length 5.08)
 				(name "ABCOM"
 					(effects
@@ -8230,7 +9016,7 @@
 				)
 			)
 			(pin passive line
-				(at 0 0 0)
+				(at 0 -2.54 0)
 				(length 5.08)
 				(name "CH1_A_12V"
 					(effects
@@ -8251,7 +9037,7 @@
 		(symbol "QD62_1_1"
 			(rectangle
 				(start 5.08 7.62)
-				(end 35.56 -50.8)
+				(end 35.56 -88.9)
 				(stroke
 					(width 0)
 					(type solid)
@@ -8451,7 +9237,7 @@
 				)
 			)
 		)
-		(property "Description" "DC入力ユニット DC24V 16ch"
+		(property "Description" "DC入力ユニット DC24V 16ch プラスコモン"
 			(at 11.43 -49.53 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -8492,7 +9278,7 @@
 				)
 			)
 			(pin passive line
-				(at 22.86 0 180)
+				(at 22.86 -5.08 180)
 				(length 5.08)
 				(name "X00"
 					(effects
@@ -8510,7 +9296,7 @@
 				)
 			)
 			(pin passive line
-				(at 22.86 -2.54 180)
+				(at 22.86 -7.62 180)
 				(length 5.08)
 				(name "X01"
 					(effects
@@ -8528,7 +9314,7 @@
 				)
 			)
 			(pin passive line
-				(at 22.86 -5.08 180)
+				(at 22.86 -10.16 180)
 				(length 5.08)
 				(name "X02"
 					(effects
@@ -8546,7 +9332,7 @@
 				)
 			)
 			(pin passive line
-				(at 22.86 -7.62 180)
+				(at 22.86 -12.7 180)
 				(length 5.08)
 				(name "X03"
 					(effects
@@ -8564,7 +9350,7 @@
 				)
 			)
 			(pin passive line
-				(at 22.86 -10.16 180)
+				(at 22.86 -15.24 180)
 				(length 5.08)
 				(name "X04"
 					(effects
@@ -8582,7 +9368,7 @@
 				)
 			)
 			(pin passive line
-				(at 22.86 -12.7 180)
+				(at 22.86 -17.78 180)
 				(length 5.08)
 				(name "X05"
 					(effects
@@ -8600,7 +9386,7 @@
 				)
 			)
 			(pin passive line
-				(at 22.86 -15.24 180)
+				(at 22.86 -20.32 180)
 				(length 5.08)
 				(name "X06"
 					(effects
@@ -8618,7 +9404,7 @@
 				)
 			)
 			(pin passive line
-				(at 22.86 -17.78 180)
+				(at 22.86 -22.86 180)
 				(length 5.08)
 				(name "X07"
 					(effects
@@ -8636,7 +9422,7 @@
 				)
 			)
 			(pin passive line
-				(at 22.86 -20.32 180)
+				(at 22.86 -25.4 180)
 				(length 5.08)
 				(name "X08"
 					(effects
@@ -8654,7 +9440,7 @@
 				)
 			)
 			(pin passive line
-				(at 22.86 -22.86 180)
+				(at 22.86 -27.94 180)
 				(length 5.08)
 				(name "X09"
 					(effects
@@ -8672,7 +9458,7 @@
 				)
 			)
 			(pin passive line
-				(at 22.86 -25.4 180)
+				(at 22.86 -30.48 180)
 				(length 5.08)
 				(name "X0A"
 					(effects
@@ -8690,7 +9476,7 @@
 				)
 			)
 			(pin passive line
-				(at 22.86 -27.94 180)
+				(at 22.86 -33.02 180)
 				(length 5.08)
 				(name "X0B"
 					(effects
@@ -8708,7 +9494,7 @@
 				)
 			)
 			(pin passive line
-				(at 22.86 -30.48 180)
+				(at 22.86 -35.56 180)
 				(length 5.08)
 				(name "X0C"
 					(effects
@@ -8726,7 +9512,7 @@
 				)
 			)
 			(pin passive line
-				(at 22.86 -33.02 180)
+				(at 22.86 -38.1 180)
 				(length 5.08)
 				(name "X0D"
 					(effects
@@ -8744,7 +9530,7 @@
 				)
 			)
 			(pin passive line
-				(at 22.86 -35.56 180)
+				(at 22.86 -40.64 180)
 				(length 5.08)
 				(name "X0E"
 					(effects
@@ -8762,7 +9548,7 @@
 				)
 			)
 			(pin passive line
-				(at 22.86 -38.1 180)
+				(at 22.86 -43.18 180)
 				(length 5.08)
 				(name "X0F"
 					(effects
@@ -8780,7 +9566,7 @@
 				)
 			)
 			(pin passive line
-				(at 22.86 -40.64 180)
+				(at 0 -43.18 0)
 				(length 5.08)
 				(name "COM"
 					(effects
@@ -8798,7 +9584,7 @@
 				)
 			)
 			(pin no_connect line
-				(at 22.86 -43.18 180)
+				(at 0 -38.1 0)
 				(length 5.08)
 				(name "NC"
 					(effects
@@ -9330,7 +10116,7 @@
 		)
 		(symbol "RFT-100A-R_0_0"
 			(pin passive line
-				(at 0 -17.78 0)
+				(at 0 -13.97 0)
 				(length 2.54)
 				(name "CH3"
 					(effects
@@ -9348,7 +10134,7 @@
 				)
 			)
 			(pin passive line
-				(at 0 -25.4 0)
+				(at 0 -21.59 0)
 				(length 2.54)
 				(name "CH6"
 					(effects
@@ -9384,7 +10170,7 @@
 				)
 			)
 			(pin passive line
-				(at 0 -12.7 0)
+				(at 0 -8.89 0)
 				(length 2.54)
 				(name "CH1"
 					(effects
@@ -9402,7 +10188,7 @@
 				)
 			)
 			(pin passive line
-				(at 0 -22.86 0)
+				(at 0 -19.05 0)
 				(length 2.54)
 				(name "CH5"
 					(effects
@@ -9420,7 +10206,7 @@
 				)
 			)
 			(pin passive line
-				(at 0 -27.94 0)
+				(at 0 -24.13 0)
 				(length 2.54)
 				(name "CH7"
 					(effects
@@ -9438,7 +10224,7 @@
 				)
 			)
 			(pin passive line
-				(at 0 -20.32 0)
+				(at 0 -16.51 0)
 				(length 2.54)
 				(name "CH4"
 					(effects
@@ -9456,7 +10242,7 @@
 				)
 			)
 			(pin passive line
-				(at 0 -6.35 0)
+				(at 0 -30.48 0)
 				(length 2.54)
 				(name "COM/GND"
 					(effects
@@ -9474,7 +10260,7 @@
 				)
 			)
 			(pin passive line
-				(at 0 -10.16 0)
+				(at 0 -6.35 0)
 				(length 2.54)
 				(name "LAMP"
 					(effects
@@ -9492,7 +10278,7 @@
 				)
 			)
 			(pin passive line
-				(at 0 -30.48 0)
+				(at 0 -26.67 0)
 				(length 2.54)
 				(name "CH8"
 					(effects
@@ -9510,7 +10296,7 @@
 				)
 			)
 			(pin passive line
-				(at 0 -15.24 0)
+				(at 0 -11.43 0)
 				(length 2.54)
 				(name "CH2"
 					(effects
